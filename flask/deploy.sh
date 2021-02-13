@@ -10,4 +10,4 @@ APP_PORT=5000
 sudo docker build -t $IMAGE_NAME $REPO_PATH
 
 # Run docker container
-sudo docker run -p $LOCAL_PORT:$APP_PORT $IMAGE_NAME
+sudo docker run -d -p $LOCAL_PORT:$APP_PORT $IMAGE_NAME
